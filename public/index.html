@@ -19,6 +19,7 @@
             /* custom player skin */
         .flowplayer {
             width: 80%;
+            margin-bottom: 35px;
             background-color: #222;
             background-size: cover;
             max-width: 800px;
@@ -85,7 +86,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="./index.html">Logo here</a>
+            <a class="brand" href="./index.html"><img src="assets/ico/favicon.png"></a>
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
@@ -104,112 +105,97 @@
     </div>
 </div>
 
-<!--<div class="jumbotron masthead">-->
 <div class="jumbotron masthead">
     <div class="container">
         <h1>GroceryGo</h1>
 
         <p>Take Your Flyers On The Go</p>
 
-        <div data-swf="//releases.flowplayer.org/5.4.3/flowplayer.swf"
-             class="flowplayer no-toggle"
+        <div class="flowplayer no-toggle"
              data-ratio="0.416">
             <video>
                 <source type="video/webm" src="http://stream.flowplayer.org/bauhaus/624x260.webm"/>
                 <source type="video/mp4" src="http://stream.flowplayer.org/bauhaus/624x260.mp4"/>
                 <source type="video/ogv" src="http://stream.flowplayer.org/bauhaus/624x260.ogv"/>
             </video>
-
         </div>
 
         <p>
             <a href="assets/bootstrap.zip" class="btn btn-primary btn-large"
-               onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.3.2']);">Download
+               onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download']);">Download
                 GroceryGo</a>
         </p>
 
+        <hr class="soften">
+
+        <img class="example-sites" src="http://chimeapp.com/assets/themes/twitter/static/sites.png">
+
     </div>
 </div>
-
-<!--<div class="bs-docs-social">-->
-<!--<div class="container">-->
-<!--<ul class="bs-docs-social-buttons">-->
-<!--<li>-->
-<!--<iframe class="github-btn"-->
-<!--src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true"-->
-<!--allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>-->
-<!--</li>-->
-<!--<li>-->
-<!--<iframe class="github-btn"-->
-<!--src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true"-->
-<!--allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>-->
-<!--</li>-->
-<!--<li class="follow-btn">-->
-<!--<a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6"-->
-<!--data-show-count="true">Follow @twbootstrap</a>-->
-<!--</li>-->
-<!--<li class="tweet-btn">-->
-<!--<a href="https://twitter.com/share" class="twitter-share-button"-->
-<!--data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap"-->
-<!--data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
 
 <div class="container">
 
     <div class="marketing">
 
-        <h1>Introducing Bootstrap.</h1>
+        <h1>Never Miss a Deal.</h1>
 
-        <p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>
+        <p class="marketing-byline">Digitized flyers lets you stay on top of all the great sales.</p>
 
         <div class="row-fluid">
             <div class="span6">
-                <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
 
-                <h2>By nerds, for nerds.</h2>
+                <div class="span9" style="text-align: center; vertical-align: middle;">
+                    <div class="span6">
+                        <h2 style="color: #E74C3C">Compare side-by-side</h2>
 
-                <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>,
-                    Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a
-                            href="http://nodejs.org">Node</a>, and is managed through <a
-                            href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
-                <img class="marketing-img" src="assets/img/bs-docs-responsive-illustrations.png">
+                        <p>See the same grocery items from all major stores side by side, so you always know where the
+                            great deals are.</p>
+                    </div>
 
-                <h2>Made for everyone.</h2>
+                    <div class="span6">
+                        <img class="marketing-img" src="assets/img/app_screenshots/categories.png">
+                    </div>
+                </div>
 
-                <p>Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as
-                    IE7!), but in tablet and smartphone browsers via
-                    <contact_usffolding.html
-                    #responsive">responsive
-                    CSS</a> as well.
-                </p>
+                <div class="span9" style="text-align: center; vertical-align: middle;">
+                    <div class="span6">
+                        <img class="marketing-img" src="assets/img/app_screenshots/categories.png">
+                    </div>
+
+                    <div class="span6">
+                        <h2 style="color: #2ECC71">Stay Notified</h2>
+
+                        <p>Notifications of great sales items blah blah text to fill space till good ones come along</p>
+                    </div>
+                </div>
             </div>
-            <!--<div class="span6">-->
-            <!---->
-            <!--</div>-->
+
             <div class="span6">
-                <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
 
-                <h2>Packed with features.</h2>
+                <div class="span9" style="text-align: center; vertical-align: middle;">
+                    <div class="span6">
+                        <h2 style="color: #3498DB">Search over 5000 weekly sales</h2>
 
-                <p>A 12-column responsive
-                    <contact_usffolding.html
-                    #gridSystem">grid</a>, dozens of components, <a
-                            href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a
-                            href="./customize.html">web-based Customizer</a> to make Bootstrap your own.
-                </p>
-                <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
+                        <p>See the same grocery items from all major stores side by side, so you always know where the
+                            great deals are.</p>
+                    </div>
 
-                <h2>Packed with features.</h2>
+                    <div class="span6">
+                        <img class="marketing-img" src="assets/img/app_screenshots/categories.png">
+                    </div>
+                </div>
 
-                <p>A 12-column responsive
-                    <contact_usffolding.html
-                    #gridSystem">grid</a>, dozens of components, <a
-                            href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a
-                            href="./customize.html">web-based Customizer</a> to make Bootstrap your own.
-                </p>
+                <div class="span9" style="text-align: center; vertical-align: middle;">
+                    <div class="span6">
+                        <img class="marketing-img" src="assets/img/app_screenshots/categories.png">
+                    </div>
+
+                    <div class="span6">
+                        <h2 style="color: #E67E22">Contextual information</h2>
+
+                        <p>Location service knows where you are, and the stores closest to you so we can send you sales info that's most relavent</p>
+                    </div>
+                </div>
             </div>
 
         </div>
