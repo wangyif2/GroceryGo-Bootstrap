@@ -75,21 +75,21 @@
     <%= form_for @message, :url => contact_path do |form| %>
         <div class="field">
 
-            <%= form.text_field :name, :placeholder => "Name", :row => "10" %>
+            <%= form.text_field :name, :class => "span6",:placeholder => "Name"%>
         </div>
 
         <div class="field">
 
-            <%= form.text_field :email, :placeholder => "Email" %>
+            <%= form.text_field :email, :class => "span6", :placeholder => "Email" %>
         </div>
         <div class="field">
 
-            <%= form.text_field :subject, :placeholder => "Subject" %>
+            <%= form.text_field :subject, :class => "span6", :placeholder => "Subject" %>
         </div>
 
         <div class="field">
 
-            <%= form.text_area :body, :placeholder => "What can we help you with?" %>
+            <%= form.text_area :body, :class => "span6", :placeholder => "What can we help you with?" %>
         </div>
 
         <fieldset class="actions">
