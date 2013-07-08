@@ -5,7 +5,7 @@ class NotificationsMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(:subject => "[YourWebsite.tld] #{message.subject}")
+    mail(:subject => "[GroceryGo Contact Us] #{message.subject}")
   end
 
 end
