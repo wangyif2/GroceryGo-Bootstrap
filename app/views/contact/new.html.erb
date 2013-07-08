@@ -63,12 +63,39 @@
                         <a href="about.html">About</a>
                     </li>
                     <li class="">
-                        <a href="contact">Contact Us</a>
+                        <a href="contact_us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+</div>
+
+<div class="jumbotron">
+    <%= form_for @message, :url => contact_path do |form| %>
+        <div class="field">
+
+            <%= form.text_field :name, :placeholder => "Name", :row => "10" %>
+        </div>
+
+        <div class="field">
+
+            <%= form.text_field :email, :placeholder => "Email" %>
+        </div>
+        <div class="field">
+
+            <%= form.text_field :subject, :placeholder => "Subject" %>
+        </div>
+
+        <div class="field">
+
+            <%= form.text_area :body, :placeholder => "What can we help you with?" %>
+        </div>
+
+        <fieldset class="actions">
+            <%= form.submit "Send", :class => "btn btn-primary btn-large" %>
+        </fieldset>
+    <% end %>
 </div>
 
 <!-- Footer
@@ -80,7 +107,7 @@
         <p>Patent Pending</p>
 
         <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a
-                href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
             <li><a href="http://blog.getbootstrap.com">Blog</a></li>
             <li class="muted">&middot;</li>
