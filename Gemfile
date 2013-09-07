@@ -3,12 +3,14 @@ ruby '1.9.3'
 
 gem 'rails', '3.2.13'
 
+gem 'newrelic_rpm'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
-gem 'thin'
-#gem 'sqlite3'
+#gem 'pg'
+#gem 'thin'
+gem 'sqlite3'
 
 gem 'mail'
 
