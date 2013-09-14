@@ -1,7 +1,7 @@
 class NotificationsMailer < ActionMailer::Base
 
   default :from => ENV['SENDGRID_USERNAME']
-  default :to => "groceryotg@gmail.com"
+  default :to => "grocerygo.ca@gmail.com"
 
   def new_message(message)
     @message = message
